@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="game.libretro.lutro"
+		name="Lua engine (Lutro)"
+		version="1.0.0"
+		provider-name="Libretro">
+	<requires>
+		<import addon="game.libretro" version="1.0.0"/>
+	</requires>
+	<extension point="kodi.gameclient"
+			library_android="libgame.libretro.nestopia.so"
+			library_linux="game.libretro.nestopia.so"
+			library_osx="game.libretro.nestopia.dylib"
+			library_windx="game.libretro.nestopia.dll">
+		<platforms>LUA</platforms>
+		<extensions>lutro|lua</extensions>
+		<supports_vfs>false</supports_vfs>
+		<supports_no_game>false</supports_no_game>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Lutro v1.0</summary>
+		<description>Lutro is an experimental Lua game framework for libretro inspired by LÖVE
+
+Supported files: .lutro, .lua
+
+License: MIT</description>
+		<platform>all</platform>
+		<nofanart>true</nofanart>
+	</extension>
+</addon>
