@@ -7,10 +7,10 @@
 		<import addon="game.libretro" version="1.0.0"/>
 	</requires>
 	<extension point="kodi.gameclient"
-			library_android="libgame.libretro.nestopia.so"
-			library_linux="game.libretro.nestopia.so"
-			library_osx="game.libretro.nestopia.dylib"
-			library_windx="game.libretro.nestopia.dll">
+			library_android="libgame.libretro.lutro.so"
+			library_linux="game.libretro.lutro.so"
+			library_osx="game.libretro.lutro.dylib"
+			library_windx="game.libretro.lutro.dll">
 		<platforms>LUA</platforms>
 		<extensions>lutro|lua</extensions>
 		<supports_vfs>false</supports_vfs>
