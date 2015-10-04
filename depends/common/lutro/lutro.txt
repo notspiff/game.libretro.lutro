@@ -1,1 +1,1 @@
-lutro https://github.com/libretro/libretro-lutro fc720be
+lutro https://github.com/libretro/libretro-lutro master
