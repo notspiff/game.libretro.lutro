@@ -7,10 +7,7 @@
 		<import addon="game.libretro" version="1.0.0"/>
 	</requires>
 	<extension point="kodi.gameclient"
-			library_android="libgame.libretro.lutro.so"
-			library_linux="game.libretro.lutro.so"
-			library_osx="game.libretro.lutro.dylib"
-			library_windx="game.libretro.lutro.dll">
+			library_@PLATFORM@="@LIBRARY_FILENAME@">
 		<platforms>LUA</platforms>
 		<extensions>lutro|lua</extensions>
 		<supports_vfs>false</supports_vfs>
@@ -23,7 +20,7 @@
 Supported files: .lutro, .lua
 
 License: MIT</description>
-		<platform>all</platform>
+		<platform>@PLATFORM@</platform>
 		<nofanart>true</nofanart>
 	</extension>
 </addon>
