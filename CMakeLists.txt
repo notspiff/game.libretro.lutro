@@ -1,16 +1,13 @@
+cmake_minimum_required(VERSION 3.1)
 project(game.libretro.lutro)
 
-cmake_minimum_required(VERSION 2.6)
-
 list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR})
-
-enable_language(CXX)
 
 find_package(Kodi REQUIRED)
 find_package(lutro REQUIRED)
 
 set(DEPLIBS lutro)
 set(LUTRO_CUSTOM_BINARY ${LUTRO_LIB}
-                        game.libretro.lutro${CMAKE_SHARED_LIBRARY_SUFFIX} lutro)
+                        ${PROJECT_NAME}${CMAKE_SHARED_LIBRARY_SUFFIX})
 
-build_addon(game.libretro.lutro LUTRO DEPLIBS)
+build_addon(${PROJECT_NAME} LUTRO DEPLIBS)
