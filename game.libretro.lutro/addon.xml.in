@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon id="game.libretro.lutro"
-		name="Lutro"
+		name="LUA Engine (Lutro)"
 		version="0.0.1"
 		provider-name="Libretro">
 	<requires>
@@ -9,17 +9,15 @@
 	<extension point="kodi.gameclient"
 			library_@PLATFORM@="@LIBRARY_FILENAME@">
 		<platforms>LUA</platforms>
-		<extensions>lutro|lua</extensions>
+		<extensions></extensions>
 		<supports_vfs>false</supports_vfs>
 		<supports_standalone>false</supports_standalone>
 		<supports_keyboard>false</supports_keyboard>
 		<supports_mouse>false</supports_mouse>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Lutro 0.0.1 2b7a930</summary>
-		<description>Lutro is an experimental Lua game framework for libretro inspired by LÖVE
-
-Supported files: .lutro, .lua</description>
+		<summary lang="en">LUA Engine (Lutro)</summary>
+		<description>Lutro is an experimental Lua game framework for libretro inspired by LÖVE</description>
 		<license>MIT</license>
 		<platform>@PLATFORM@</platform>
 	</extension>
